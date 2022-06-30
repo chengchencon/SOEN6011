@@ -1,6 +1,4 @@
 # SOEN6011
-Creating a new branch is quick and simple.
-
-test dev
-
-track
+Cheng Chen 
+ID: 40222770
+Github Repo for SOEN 6011, 2022 summer II.
