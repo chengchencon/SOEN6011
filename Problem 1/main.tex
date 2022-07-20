@@ -7,6 +7,7 @@
 \usepackage{float,flafter}
 \usepackage{hyperref}
 \usepackage{inputenc}
+
 %zet de bladspiegel :
 \setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1.499cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
 
@@ -44,32 +45,43 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 
 \section{Description}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
-De meetresultaten worden samengevat.  
-
-\subsection{Meting van 1... en bespreking}
-Eventueel kan je een paragraaf op deze manier onderverdelen in verschillende subsecties.
+The function tan(x), is short for the trigonometric functions(also called circular functions), which are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. And it's widely used in all sciences that are related to geometry.
+\subsection{Domain and co-domain of tan(x)}
+\begin{enumerate}
+\item 
+\textbf{Domain}: x:all real numbers except the values where cos(x) is equal to 0.
+\item
+\textbf{Co-domain}: y:all real numbers, R
+\end{enumerate}
 
 %hier werd verwezen naar de tabel die als \label (naam} 'tabel1' kreeg.
 
 
 
 
-\subsection{Meting 2}
-... enzoverder.
+\subsection{Characteristics of tan(x)}
+\begin{enumerate}
+\item tan(x)=sin(x)/cos(x)
+\item period:$\pi$
+\item $x\rightarrow \pi /2+k\pi, k\in Z,tan(x)\rightarrow+\infty$
+\item $x\rightarrow\pi/2+k\pi, k\in Z,tan(x)\rightarrow-\infty$
+\end{enumerate}
+
 
 \section{Context of use model}
-Hier komt de bespreking als die niet bij de meetresultaten werd gezet. 
-Opsommingen kan je invoeren als~:
+
 \begin{enumerate}
 \item 
-eerste puntje
+User: A user who is planning to use a calculator to calculate the output of tan(x) with the input x.
 \item
-tweede puntje
+Task: Calculate the output of tan(x) with the input x and show the result in the screen of the calculator for the user.
 \item
-en zelfs genest zoals bijvoorbeeld
+Environment:
 \begin{itemize}
-\item eerste subpuntje
-\item ....
+\item Technical environment:
+The power of the used calculator. A calculator can't be used with no power.
+\item Non-technical environment:
+The location where the user use the calculator.
 \end{itemize}
 \end{enumerate}
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
