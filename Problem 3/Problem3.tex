@@ -7,6 +7,8 @@
 \usepackage{float,flafter}
 \usepackage{hyperref}
 \usepackage{inputenc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 %zet de bladspiegel :
 \setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1.499cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
 
@@ -41,17 +43,25 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 %\caption{}
 %\label{fig:figje}
 %\end{figure}
+\section{Mindmap}
+
 
 \section{Algorithm 1}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
 
-\begin{enumerate}
-\item 
-Identifier 1
-\item
-Identifier 2
-]
-\end{enumerate}
+\begin{algorithm}
+\caption{An algorithm with caption}\label{alg:cap}
+\begin{algorithmic}
+\Require $x \in R$
+\Ensure $y = tan(x)$
+\State $X \gets input$
+\While{True}
+    \State $y \gets X+X+X \times X$
+    \State output y
+    \Comment{This is a comment}
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
 
 %hier werd verwezen naar de tabel die als \label (naam} 'tabel1' kreeg.
 
@@ -59,27 +69,8 @@ Identifier 2
 
 
 \subsection{Algorithm 2}
-\begin{enumerate}
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan^2x
-\item arctanx
-\end{itemize} 
-\end{enumerate}
 
-\section{Context of use model}
 
-\begin{enumerate}
-\item 
-User：
-\item
-Task:
-\item
-Environment:
-\begin{itemize}
-\item eerste subpuntje
-\end{itemize}
-\end{enumerate}
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
 
 \end{document}
