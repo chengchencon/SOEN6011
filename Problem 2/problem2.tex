@@ -9,7 +9,8 @@
 \usepackage{inputenc}
 %zet de bladspiegel :
 \setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1.499cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
-
+\usepackage{biblatex}
+\addbibresource{problem2ref.bib}
 \begin{document}
 \begin{center}
 \hrule
@@ -41,67 +42,74 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 %\caption{}
 %\label{fig:figje}
 %\end{figure}
-
-\section{Functional Requirements}
+\section{Introduction}
+    All requirements below are written according to the section 5.2.4~5.2.8 in 29148-2018 - ISO/IEC/IEEE International Standard - Systems and software engineering -- Life cycle processes -- Requirements engineering\cite{8559686}
+\section{Requirements' Set}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
 
 \begin{enumerate}
 \item 
 Requirement 1
 \begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
-Requirement 2
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
-Requirement 3
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
-Requirement 3
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
+\item Identification:FR1
+\item Version Number:1.0
+\item Owner:Cheng Chen
+\item Stakeholder Priority:High
+\item Risk:Low
+\item Description:The user shall make sure his/her input data is in radians, not degrees.
+\item Rationale: For the convenience of calculating. The function tan(x) program only supports the radians input.
+\item Difficulty:Easy
+\item Type:Functional Requirement
 \end{itemize} 
 
-\end{enumerate}
-\section{Non-Functional Requirements}
-%Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
-
-\begin{enumerate}
 \item 
-Requirement 1
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
 Requirement 2
 \begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
-Requirement 3
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
-\end{itemize} 
-\item
-Requirement 3
-\begin{itemize}
-\item tan(x)=sin(x)/cos(x)
-\item tan'(x)=1 + tan
+\item Identification:FR2
+\item Version Number:1.0
+\item Owner:Cheng Chen
+\item Stakeholder Priority:
+\item Risk:Low
+\item Description:The user shall make sure his/her input data is double number, which can only contain numbers in 0~9, and period ".".
+\item Rationale: For avoiding error of calculating. The function tan(x) program only supports the input of double number type
+\item Difficulty:Easy
+\item Type:Functional Requirement
 \end{itemize} 
 
+\item 
+Requirement 3
+\begin{itemize}
+\item Identification:FR3
+\item Version Number:1.0
+\item Owner:Cheng Chen
+\item Stakeholder Priority:
+\item Risk:Low
+\item Description:The user shall input only one double number in one input operation.
+\item Rationale:For the convenience of calculating. The function tan(x) program only supports one input in one input operation.
+\item Difficulty:Easy
+\item Type:Functional Requirement
+\end{itemize} 
+
+\item 
+Requirement 4
+\begin{itemize}
+\item Identification:NFR1
+\item Version Number:1.0
+\item Owner:Cheng Chen
+\item Stakeholder Priority:High
+\item Risk:Low
+\item Description:The user must run this tan(x) function in a computer with JRE(Java Runtime Environment) installed.
+\item Rationale:This tan(x) function is programmed in Java programming language and Java program can't run without JRE(Java Runtime Environment). Therefore, the user must install JRE to run this function.
+\item Difficulty:Easy
+\item Type:Non-Functional Requirement
+\end{itemize} 
+
+
+
 \end{enumerate}
+
+
+
 %hier werd verwezen naar de tabel die als \label (naam} 'tabel1' kreeg.
 
 
@@ -119,4 +127,12 @@ The output is between $-\infty$ ~  $+\infty$
 \end{enumerate}
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
 
+\printbibliography
+
+
+
 \end{document}
+
+
+
+% 5.2.8具体内容
