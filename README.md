@@ -1,4 +1,4 @@
 # SOEN6011
-Creating a new branch is quick and simple.
-git is free.
-test dev
+Student Name:Cheng Chen
+Student ID:40222770
+Github repository for SOEN 6011 Project
