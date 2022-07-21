@@ -44,19 +44,27 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 %\label{fig:figje}
 %\end{figure}
 \section{Mindmap}
-
+\includegraphics[scale=0.15]{TooLTT.png}
 
 \section{Algorithm 1}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
 
 \begin{algorithm}
+\subsection{Technical reasons}
+\begin{item}
+\item
+Algorithm 1: hard coded formula, easy to implement.
+\item
+Algorithm 2: Also hard coded, but faster.
+\end{item}
+\subsection{Pseudo code}
 \caption{An algorithm with caption}\label{alg:cap}
 \begin{algorithmic}
 \Require $x \in R$
 \Ensure $y = tan(x)$
 \State $X \gets input$
 \While{True}
-    \State $y \gets X+X+X \times X$
+    \State $y \gets x+x^3/1\times3+2\times( x^5)/1\times3\times5$
     \State output y
     \Comment{This is a comment}
 \EndWhile
@@ -66,9 +74,10 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 %hier werd verwezen naar de tabel die als \label (naam} 'tabel1' kreeg.
 
 
-
-
+\subction{Algorithm 1's Description}
+In Algorithm 1, tan(x) is computed by taylor series.
 \subsection{Algorithm 2}
+
 
 
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
