@@ -3,6 +3,7 @@
 %laad de pakketten nodig om wiskunde weer te geven :
 \usepackage{amsmath,amssymb,amsfonts,textcomp}
 %laad de pakketten voor figuren :
+
 \usepackage{graphicx}
 \usepackage{float,flafter}
 \usepackage{hyperref}
@@ -10,11 +11,13 @@
 
 %zet de bladspiegel :
 \setlength\paperwidth{20.999cm}\setlength\paperheight{29.699cm}\setlength\voffset{-1in}\setlength\hoffset{-1in}\setlength\topmargin{1.499cm}\setlength\headheight{12pt}\setlength\headsep{0cm}\setlength\footskip{1.131cm}\setlength\textheight{25cm}\setlength\oddsidemargin{2.499cm}\setlength\textwidth{15.999cm}
+\usepackage[sorting =none]{biblatex}
+\addbibresource{problem1ref.bib}
 
 \begin{document}
+
 \begin{center}
 \hrule
-
 \vspace{.4cm}
 {\bf {\Huge Problem 1}}
 \vspace{.2cm}
@@ -46,6 +49,7 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 \section{Description}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
 The function tan(x), is short for the trigonometric functions(also called circular functions), which are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. And it's widely used in all sciences that are related to geometry.
+\cite{114514}
 \subsection{Domain and co-domain of tan(x)}
 \begin{enumerate}
 \item 
@@ -69,7 +73,8 @@ The function tan(x), is short for the trigonometric functions(also called circul
 
 
 \section{Context of use model}
-
+The model below is based on the guideline in IEEE Guide for Information Technology--System Definition--Concept of Operations (ConOps) Document.
+\cite{1998702}
 \begin{enumerate}
 \item 
 User: A user who is planning to use a calculator to calculate the output of tan(x) with the input x.
@@ -86,4 +91,9 @@ The location where the user use the calculator.
 \end{enumerate}
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
 
+
+\printbibliography
+
+
 \end{document}
+
