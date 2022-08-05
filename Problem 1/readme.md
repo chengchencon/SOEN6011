@@ -1,2 +1,1 @@
-Including problem1.pdf and problem1.tex
-
+Including problem1.pdf, problem1.tex and problem1ref.bib
