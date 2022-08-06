@@ -1,5 +1,4 @@
 package func;
-
 import java.util.Scanner;
 import java.math.*;
 
@@ -30,7 +29,6 @@ public class tan1 {
             try {
                 Scanner input = new Scanner(System.in);
                 System.out.println("Please enter your x for us to calculate tan(x) for you:");
-
                 double inVal = input.nextDouble();
                 //make sure inVal is between 1.57079623679 and -1.57079623679
                 while (inVal > 1.57079632679)
@@ -49,7 +47,6 @@ public class tan1 {
                     double out2 = 2.0 * tan(newInval) / (1 - tan(newInval) * tan(newInval));
                     System.out.println(out2);
                 }
-
             }
             catch(java.util.InputMismatchException e)
             {
