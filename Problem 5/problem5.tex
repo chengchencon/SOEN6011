@@ -41,7 +41,7 @@ SOEN 6011: Software Engineering Processes {\bf  } \hspace{\fill}  17 July  2022 
 %\caption{}
 %\label{fig:figje}
 %\end{figure}
-\section{description about the trace to the requirements}
+\section{Description about the trace to the requirements}
 \begin{itemize}
     \item FR1:All the input of the test cases below are in radians, which are with the expected output according to the radians' status.
     \item FR2::All the input of the test cases below are real numbers with only one period ".".
@@ -55,7 +55,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 12.0.1+12, mixed mode, sharing)
 
 \section{Test Cases}
 %Met het commando \sectie{naamtitel} maak je een nieuwe titel aan.
-
+All test cases below are written based on Tips/Guidelines for writing test cases with some editings.\cite{ref1}
+The expected outouts were calculated and given by the calculator on the mobile phone.
 \begin{enumerate}
 \item 
 Test Case 1
@@ -63,111 +64,131 @@ Test Case 1
     \item input:0.0
     \item output by Algorithm 1:0.0
     \item output by Algorithm 2:0.0
-    \item expected output:0
-    \item result:Pass
+    \item expected output:0.0
+    \item Algorithm 1 result:Pass
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 2
 \begin{itemize}
     \item input:0.15
     \item output by Algorithm 1:0.151135
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:0.151135
     \item expected output:0.151135
-    \item result:Pass
+    \item Algorithm 1 result:Pass
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 3
 \begin{itemize}
     \item input:0.30
     \item output by Algorithm 1:0.309336
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:0.309336
     \item expected output:0.309336
-    \item result:Pass
+    \item Algorithm 1 result:Pass
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 4
 \begin{itemize}
     \item input:0.45
     \item output by Algorithm 1:0.483055
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:0.483055
     \item expected output:0.483055
-    \item result:Pass
+    \item Algorithm 1 result:Pass
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 5
 \begin{itemize}
     \item input:0.60
     \item output by Algorithm 1:0.684136
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:0.684136
     \item expected output:0.684136
-    \item result:Pass
+    \item Algorithm 1 result:Pass
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 6
 \begin{itemize}
     \item input:0.75
     \item output by Algorithm 1:0.931590
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:0.931596
     \item expected output:0.931596
-    \item result:Pass
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 7
 \begin{itemize}
     \item input:0.90
     \item output by Algorithm 1:1.260011
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:1.260158
     \item expected output:1.260158
-    \item result:Pass
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 8
 \begin{itemize}
     \item input:1.05
     \item output by Algorithm 1:1.740870
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:1.743315
     \item expected output:1.743315
-    \item result:Pass
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 9
 \begin{itemize}
     \item input:1.20
     \item output by Algorithm 1:2.540713
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:2.572151
     \item expected output:2.572151
-    \item result:Fail
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 10
 \begin{itemize}
     \item input:1.35
     \item output by Algorithm 1:4.084290
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:4.455221
     \item expected output:4.455221
-    \item result:Fail
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 11
 \begin{itemize}
     \item input:1.50
     \item output by Algorithm 1:14.100190
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:14.101419
     \item expected output:14.101419
-    \item result:Pass
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
 \item 
 Test Case 12
 \begin{itemize}
     \item input:1.57
    \item output by Algorithm 1:1235.828402
-    \item output by Algorithm 2:
+    \item output by Algorithm 2:1255.765591
     \item expected output:1255.765591
-    \item result:Pass
+    \item Algorithm 1 result:Fail
+    \item Algorithm 2 result:Pass
 \end{itemize}
+
 
 \end{enumerate}
 
+\section{Total}
+\begin{itemize}
+    
+    \item Algorithm 1 accuracy: 41.60\%
+    \item Algorithm 2 accuracy: 100.00\%
+\end{itemize}
+conclusion: Algorithm 2 has the better performance. Algorithm 1 met problems when the input x is over 0.60.
 %hier werd verwezen naar de tabel die als \label (naam} 'tabel1' kreeg.
 
 
@@ -175,4 +196,7 @@ Test Case 12
 
 %met enumerate genereer je een opsomming, itemize maakt verschillende puntjes
 
+\begin{thebibliography}{99}  
+\bibitem{ref1}STC Admin, Tips/Guidelines for writing test cases, Softwaretestingclass.com, 2012.  
+\end{thebibliography}
 \end{document}
