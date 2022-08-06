@@ -1,6 +1,5 @@
 package func;
 import java.util.Scanner;
-import java.math.*;
 //tan(a+b)=(tana+tanb)/(1-tana*tanb)
 public class tan2 {
     public static double tanApart(double num1){
