@@ -1,4 +1,3 @@
-package func;
 import java.util.Scanner;
 
 public class tan1 {
