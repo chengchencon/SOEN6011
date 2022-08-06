@@ -1,6 +1,5 @@
 package func;
 import java.util.Scanner;
-import java.math.*;
 
 public class tan1 {
     double pi = 3.1415926536;
