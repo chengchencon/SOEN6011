@@ -18,8 +18,9 @@ public class tan2 {
         while(true) {
             try {
                 Scanner input = new Scanner(System.in);
-                System.out.println("Please enter your x for us to calculate tan(x) for you:");
+                System.out.println("Please enter your x for us to calculate tan(x) for you, only one number for one input:");
                 double inVal = input.nextDouble();
+                //make sure inVal is between 1.57079623679 and -1.57079623679
                 while(inVal>1.57079632679)
                 {
                     inVal+=-1.57079632679;
@@ -29,7 +30,6 @@ public class tan2 {
                     inVal += 1.57079632679;
                 }
                 System.out.println(tanApart(inVal));
-                System.out.println(Math.tan(inVal));
 
             }catch(java.util.InputMismatchException e){
                 System.out.println("Please input numbers only!");
