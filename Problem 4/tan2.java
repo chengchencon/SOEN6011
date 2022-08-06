@@ -1,4 +1,3 @@
-package func;
 import java.util.Scanner;
 //tan(a+b)=(tana+tanb)/(1-tana*tanb)
 public class tan2 {
