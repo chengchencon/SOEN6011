@@ -9,11 +9,9 @@ public class tan2 {
             out= (out+0.010000333346667207)/(1-out*0.010000333346667207);
             num1-=0.01;
         }
-
         return out;
     }
-
-
+    
     public static void main(String[] args) {
         while(true) {
             try {
@@ -30,11 +28,9 @@ public class tan2 {
                     inVal += 1.57079632679;
                 }
                 System.out.println(tanApart(inVal));
-
             }catch(java.util.InputMismatchException e){
                 System.out.println("Please input numbers only!");
                 }
-
             }
         }
 }
